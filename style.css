@@ -30,7 +30,7 @@ td button{
 }
 
 .answer{
-    background-color: rgb(225, 248, 183);
+    /* background-color: rgb(225, 248, 183); */
     border-radius: 2px;
     height: 20px;
     width: 100%;
