@@ -36,7 +36,7 @@ td button{
     width: 100%;
 }
 
-tr:nth-child(3) td:nth-child(4) button{
+tr:nth-child(4) td:nth-child(4) button{
     background-color: tomato;
     padding-top: 13px;
     padding-bottom: 13px;
