@@ -1,9 +1,13 @@
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     var numButtons = document.querySelectorAll(".num");
     var value = document.querySelector("#value");
     var del = document.querySelector("#delete");
     var eq = document.querySelector('#eq');
     var optButtons = document.querySelectorAll(".opt");
+  
 
     var num1 = 0;
     var num2 = 0;
@@ -52,6 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
         value.innerHTML = delval
     })
 
+   
+
+
+
     function calculation(opt) {
         switch (opt) {
             case '+':
@@ -65,6 +73,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 num1 = sol
                 return sol
                 break;
+
+            case '*':
+                sol = parseInt(num1) * parseInt(num2)
+                num1 = sol
+                return sol
+                break;
+
+                case '/':
+                    sol = parseInt(num1) / parseInt(num2)
+                    num1 = sol
+                    return sol
+                    break;
         }
     }
 
