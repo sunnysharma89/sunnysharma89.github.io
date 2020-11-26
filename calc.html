@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,43 +9,53 @@
     <link rel="stylesheet" href="style.css">
     <script src="calc.js"></script>
 </head>
+
 <body>
     <div class="calculator-wrapper">
         <div class="calculator-top">
             <div class="answer">
-                <div id="value"></div>
+                <div id="value">0</div>
             </div>
         </div>
         <div class="calculator-bottom">
             <table>
+
+                <tr>
+                    <td><button class="opt" >/</button></td>
+                    <td><button class="opt">*</button></td>
+                    <td><button>C</button></td>
+                    <td><button id="delete"> X </button></td>
+                </tr>
+
                 <tr>
                     <td><button class="num">7</button></td>
                     <td><button class="num">8</button></td>
                     <td><button class="num">9</button></td>
-                    <td><button>-</button></td>
+                    <td><button class="opt">-</button></td>
                 </tr>
-        
+
                 <tr>
                     <td><button class="num">4</button></td>
                     <td><button class="num">5</button></td>
                     <td><button class="num">6</button></td>
-                    <td><button>+</button></td>
+                    <td><button class="opt">+</button></td>
                 </tr>
-        
+
                 <tr>
                     <td><button class="num">1</button></td>
                     <td><button class="num">2</button></td>
                     <td><button class="num">3</button></td>
-                    <td rowspan="2"><button>=</button></td>
+                    <td rowspan="2"><button id="eq"> = </button></td>
                 </tr>
-        
+
                 <tr>
                     <td colspan="2"><button class="num">0</button></td>
                     <td><button>.</button></td>
                 </tr>
-        
+
             </table>
         </div>
     </div>
 </body>
+
 </html>
