@@ -1,13 +1,11 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     var numButtons = document.querySelectorAll(".num");
     var value = document.querySelector("#value");
     var del = document.querySelector("#delete");
+    var clearButton = document.querySelector("#clear");
     var eq = document.querySelector('#eq');
     var optButtons = document.querySelectorAll(".opt");
-  
+
 
     var num1 = 0;
     var num2 = 0;
@@ -56,9 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
         value.innerHTML = delval
     })
 
-   
-
-
+    clearButton.addEventListener("click", function () {
+        num1 = 0;
+        num2 = 0;
+        value.innerHTML = 0
+    })
 
     function calculation(opt) {
         switch (opt) {
@@ -80,11 +80,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 return sol
                 break;
 
-                case '/':
-                    sol = parseInt(num1) / parseInt(num2)
-                    num1 = sol
-                    return sol
-                    break;
+            case '/':
+                sol = parseInt(num1) / parseInt(num2)
+                num1 = sol
+                return sol
+                break;
         }
     }
 
